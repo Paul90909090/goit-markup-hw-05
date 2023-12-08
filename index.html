@@ -67,10 +67,31 @@
     <main>
       <!-- Hero -->
 
-      <section class="hero ">
+      <section class="hero">
         <div class="container box">
           <h1 class="hero-title">Ефективні рішення для<br />вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Замовити послугу
+          </button>
+          <div class="modal-background is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-close-button" data-modal-close>
+                <div class="modal-icon-box">
+                  <svg class="modal-icon-elipse">
+                    <use
+                      href="./images/logocompany-sprite.svg#icon-close-black-18dp-2-1 "
+                      ,
+                    ></use>
+                  </svg>
+                  <svg class=" modal-icon">
+                    <use
+                      href="./images/logocompany-sprite.svg#icon-Ellipse-1"
+                    ></use>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -135,6 +156,7 @@
           <ul class="work-list list">
             <li class="work-item">
               <img src="./images/box1.jpg" alt="working from PC" width="370" />
+              <p class="working-on">Десктопні додатки</p>
             </li>
             <li class="work-item">
               <img
@@ -142,6 +164,7 @@
                 alt="working from laptop"
                 width="370"
               />
+              <p class="working-on">Мобільні додатки</p>
             </li>
             <li class="work-item">
               <img
@@ -149,6 +172,7 @@
                 alt="working from tablet"
                 width="370"
               />
+              <p class="working-on">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -333,18 +357,18 @@
       <section class="section container">
         <h2 class="section-title">Постійні клієнти</h2>
         <ul class="clients-list list">
-          <li >
+          <li>
             <a class="clients-icon-box" href="">
               <svg class="clients-icon">
-                <use 
+                <use
                   href=".//images/logocompany-sprite.svg#icon-Logocompany1"
                 ></use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="clients-icon-box"  href="">
-              <svg class="clients-icon" >
+            <a class="clients-icon-box" href="">
+              <svg class="clients-icon">
                 <use
                   href=".//images/logocompany-sprite.svg#icon-Logocompany2"
                 ></use>
@@ -352,8 +376,8 @@
             </a>
           </li>
           <li>
-            <a class="clients-icon-box"  href="">
-              <svg class="clients-icon" >
+            <a class="clients-icon-box" href="">
+              <svg class="clients-icon">
                 <use
                   href=".//images/logocompany-sprite.svg#icon-Logocompany3"
                 ></use>
@@ -361,8 +385,8 @@
             </a>
           </li>
           <li>
-            <a class="clients-icon-box"  href="">
-              <svg class="clients-icon" >
+            <a class="clients-icon-box" href="">
+              <svg class="clients-icon">
                 <use
                   href=".//images/logocompany-sprite.svg#icon-Logocompany4"
                 ></use>
@@ -370,8 +394,8 @@
             </a>
           </li>
           <li>
-            <a class="clients-icon-box"  href="">
-              <svg class="clients-icon" >
+            <a class="clients-icon-box" href="">
+              <svg class="clients-icon">
                 <use
                   href=".//images/logocompany-sprite.svg#icon-Logocompany5"
                 ></use>
@@ -379,8 +403,8 @@
             </a>
           </li>
           <li>
-            <a class="clients-icon-box"  href="">
-              <svg class="clients-icon" >
+            <a class="clients-icon-box" href="">
+              <svg class="clients-icon">
                 <use
                   href=".//images/logocompany-sprite.svg#icon-Logocompany6"
                 ></use>
@@ -415,7 +439,7 @@
           </ul>
         </div>
         <div class="footer-network">
-          <h2 class="footer-network-title" >приєднуйтесь</h2>
+          <h2 class="footer-network-title">приєднуйтесь</h2>
           <ul class="footer-network-list list">
             <li>
               <a class="footer-icon-box" target="_blank" href="">
@@ -449,5 +473,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
