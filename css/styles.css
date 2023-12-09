@@ -705,10 +705,6 @@ fill: currentColor;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.modal-icon{
-    width: 18px;
-    height: 18px;
-}
 .modal-close-button{
     position: absolute;
     display: block;
@@ -718,13 +714,12 @@ fill: currentColor;
     right: 0;
     cursor: pointer;
     border-radius: 4px;
+    background-color: var(--main-white-color);
+    border: #AFB1B8;
 }
 
-.modal-icon-elipse{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% ,-50%);
+.modal-icon {
+    width: 18px;
+    height: 18px;
 }
+
